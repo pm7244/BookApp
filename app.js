@@ -7,11 +7,11 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(cors());
-app.use("/books", router); // localhost:5000/books
+app.use("/books", router); 
 
 mongoose
   .connect(
-    "mongodb+srv://admin:nUd0zMDtbX35sTL0@cluster0.5yvzr.mongodb.net/bookStore?retryWrites=true&w=majority"
+    "mongodb+srv://PawarMukesh:H0kj9rXiW8VOQJA2@cluster0.zxv7wgr.mongodb.net/APPBOOK"
   )
   .then(() => console.log("Connected To Database"))
   .then(() => {
